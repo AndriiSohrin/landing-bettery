@@ -1,0 +1,486 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/*===================== text setting ===========================*/
+
+body {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+
+    color: #0B1511;
+}
+
+body h1, h2, h3 {
+    margin: 0;
+}
+
+.title {
+    color: #0B1511;
+
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 56px;
+}
+
+.subtitle {
+    size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 28;
+}
+
+/*==================== Header setting =====================*/
+
+.header {
+    background-image: url("./imagine/header/Group 28.png");
+    background-repeat: no-repeat;
+    background-position: 482px -420px;
+    display: flex;
+}
+
+.nav-bar {
+    height: 90px;
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo {
+    width: 169px;
+    margin-right: 72px;
+}
+
+.nav-menu {
+    /*width: 86%;*/
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #0B1511;
+
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 20px;
+
+}
+
+.menu-item {
+    margin-right: 32px;
+}
+
+.banner {
+    align-self: center;
+
+    margin-left: 70px;
+    margin-top: 220px;
+    margin-bottom: 165px;
+}
+
+.main-title {
+    max-width: 600px; /*temporarily*/
+
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 64px;
+
+}
+
+.title-text {
+    width: 528px; /*temporarily*/
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 12px;
+}
+
+.mt-76 {
+    margin-top: 76px;
+}
+
+.header-btn-wrap {
+    margin-top: 16px;
+}
+
+.header-btn {
+    height: 48px;
+    width: 171px;
+    border: none;
+    border-radius: 24px;
+    background-color: #54DD96;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+
+    /*===btn text===*/
+
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+
+    cursor: pointer;
+
+}
+
+/*==================== second setting =====================*/
+
+.second {
+    display: flex;
+}
+
+/*=======right=======*/
+.second-right {
+    width: 50%;
+}
+
+.title-second {
+    max-width: 584px;
+    margin-top: 330px;
+}
+
+.second-right-text {
+    margin-top: 16px;
+}
+
+.second-left {
+    width: 50%;
+}
+
+.card-top {
+    display: flex;
+    padding-top: 120px;
+    padding-left: 70px;
+}
+
+.card-bottom {
+    padding-left: 70px;
+    padding-top: 64px;
+    padding-bottom: 135px;
+}
+
+.card {
+    max-height: 288px;
+    max-width: 242px;
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+    padding: 24px 16px;
+
+
+}
+
+.card-yellow {
+    background-color: #FDD92A;
+    margin-top: -140px;
+}
+
+.mt-ml {
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+
+
+.card-text {
+
+    /*height: 104px;*/
+    /*width: 210px;*/
+    line-height: 26px;
+    text-align: center;
+    margin: auto;
+
+}
+
+.card-title {
+
+    max-width: 210px;
+    color: #0B1511;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+
+    margin: 16px auto 8px auto;
+}
+
+
+/*===================== 3th setting =======================*/
+
+.third {
+    display: flex;
+    padding-bottom: 212px;
+}
+
+.third-left {
+    width: 50%;
+    padding-left: 70px;
+    padding-top: 95px;
+}
+
+.third-right {
+    width: 50%;
+    padding-left: 58px;
+}
+
+.img-choose {
+    margin-top: -125px;
+
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+/*======================= value blockchain ======================*/
+
+.val-blockchain {
+    padding: 0 84px 0 84px;
+}
+
+.val-blockchain-title {
+    height: 56px;
+    max-width: 638px;
+    text-align: center;
+    margin: auto;
+}
+
+.val-blockchain-text {
+    max-height: 84px;
+    max-width: 638px;
+
+    text-align: center;
+    margin: 16px auto 0 auto;
+}
+
+.blockchain-card-wrap {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 100px;
+    margin-bottom: 240px;
+}
+
+.blockchain-card {
+
+    height: 216px;
+    width: 275px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.1);
+    padding: 16px;
+
+    text-align: center;
+
+}
+
+.blockchain-card-title {
+
+    width: 243px;
+
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin: auto;
+    padding: 16px 0 16px 0;
+
+
+}
+
+.blockchain-card-text {
+
+    max-width: 243px;
+
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin: auto;
+
+}
+
+/*======================== others-say setting ===========================*/
+
+.others-say {
+    padding: 0 84px 0 84px;
+}
+
+.others-say-title {
+    height: 56px;
+    max-width: 638px;
+    text-align: center;
+    margin: auto;
+}
+
+.others-say-text {
+    max-height: 84px;
+    max-width: 638px;
+
+    text-align: center;
+    margin: 16px auto 0 auto;
+}
+
+.others-say-card-wrap {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 100px;
+    margin-bottom: 240px;
+}
+
+.others-say-card {
+
+    box-sizing: border-box;
+    height: 256px;
+    width: 337px;
+    border: 3px solid #E0E4F3;
+    border-radius: 32px 0 32px 0;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 0 0 #FDD92A;
+
+    text-align: center;
+
+}
+
+.card-revers {
+
+    border-radius: 0 32px 0 32px;
+}
+
+
+.others-say-card-title {
+
+    width: 243px;
+    color: #0B1511;
+
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin: auto;
+    padding: 16px 0 16px 0;
+
+
+}
+
+.others-say-card-text {
+
+    width: 243px;
+
+    color: #0B1511;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin: auto;
+
+}
+
+/*======================== Roadmap setting ===========================*/
+
+.roadmap {
+    height: 700px; /*temporarily*/
+    background-color: lightslategray; /*temporarily*/
+}
+
+.roadmap-top {
+    height: 50%; /*temporarily*/
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap-bottom {
+    height: 50%; /*temporarily*/
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*======================== Team setting ===========================*/
+
+.team {
+    height: 950px; /*temporarily*/
+    background-color: lightcoral; /*temporarily*/
+}
+
+/*========================  Form setting ==============================*/
+
+.form {
+    height: 685px; /*temporarily*/
+    background-color: #FDDB27; /*temporarily*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form_wrap {
+    height: 560px;
+    width: 560px;
+    background-color: lavender; /*temporarily*/
+}
+
+.form_wrap label {
+    width: 80%;
+}
+
+.form_wrap input {
+    width: 80%;
+    margin: auto;
+}
+
+.form_full_name {
+    width: 82%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_full_name input {
+    width: 94%;
+}
+
+.form_first_name {
+    width: 50%; /*temporarily*/
+}
+
+.form_last_name {
+    width: 50%; /*temporarily*/
+}
+
+/*========================  Footer setting ==============================*/
+
+.footer {
+    height: 300px;
+    background-color: black;
+}
+
