@@ -9,6 +9,13 @@ main {
     font-family: 'Titillium Web', sans-serif;
     max-width: 1440px;
     margin: auto;
+
+    /*background-image: url("./imagine/background/left.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 0 41%;*/
+
+    background: url("./imagine/background/left.png") 0 42% no-repeat,
+    url("./imagine/background/right.png") 100% 58% no-repeat;
 }
 
 /*===================== text setting ===========================*/
@@ -149,11 +156,14 @@ body h1, h2, h3 {
 
 .second {
     display: flex;
+    background-image: url("./imagine/background/left.png");
+    background-repeat: no-repeat;
 }
 
 /*=======right=======*/
 .second-right {
     width: 50%;
+    background: url("./imagine/background/Group 30.png") 40% 5% no-repeat;
 }
 
 .title-second {
@@ -206,7 +216,6 @@ body h1, h2, h3 {
 }
 
 
-
 .card-text {
 
     /*height: 104px;*/
@@ -236,6 +245,7 @@ body h1, h2, h3 {
 .third {
     display: flex;
     padding-bottom: 212px;
+    background: url("./imagine/background/Group 30.png") 13% 80% no-repeat;
 }
 
 .third-left {
@@ -254,7 +264,7 @@ body h1, h2, h3 {
 
 }
 
-.mt-16{
+.mt-16 {
     margin-top: 16px;
 }
 
@@ -262,6 +272,8 @@ body h1, h2, h3 {
 
 .val-blockchain {
     padding: 0 84px 0 84px;
+
+    background: url("./imagine/background/Group 30.png") 10% 99% no-repeat;
 }
 
 .val-blockchain-title {
@@ -271,7 +283,7 @@ body h1, h2, h3 {
     margin: auto;
 }
 
-.val-blockchain-text {
+.block-text {
     max-height: 84px;
     max-width: 638px;
 
@@ -279,12 +291,12 @@ body h1, h2, h3 {
     margin: 16px auto 0 auto;
 }
 
-.blockchain-card-wrap {
+.block-card-wrap {
     display: flex;
     justify-content: space-around;
 
     margin-top: 100px;
-    margin-bottom: 240px;
+    padding-bottom: 230px;
 }
 
 .blockchain-card {
@@ -329,50 +341,41 @@ body h1, h2, h3 {
 
 .others-say {
     padding: 0 84px 0 84px;
-}
-
-.others-say-title {
-    height: 56px;
-    max-width: 638px;
     text-align: center;
-    margin: auto;
-}
 
-.others-say-text {
-    max-height: 84px;
-    max-width: 638px;
-
-    text-align: center;
-    margin: 16px auto 0 auto;
-}
-
-.others-say-card-wrap {
-    display: flex;
-    justify-content: space-around;
-
-    margin-top: 100px;
-    margin-bottom: 240px;
+    background: url("./imagine/background/Group 30.png") 82% 93% no-repeat;
 }
 
 .others-say-card {
 
     box-sizing: border-box;
-    height: 256px;
+    min-height: 256px;
     width: 337px;
     border: 3px solid #E0E4F3;
     border-radius: 32px 0 32px 0;
     background-color: #FFFFFF;
     box-shadow: 4px 4px 0 0 #FDD92A;
 
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 
+    padding: 16px;
+}
+
+
+.say-card-author {
+    margin: 24px;
+    display: flex;
+    align-items: center;
 }
 
 .card-revers {
-
     border-radius: 0 32px 0 32px;
 }
 
+.others-say-card-photo {
+    margin-right: 10px;
+}
 
 .others-say-card-title {
 
@@ -391,39 +394,105 @@ body h1, h2, h3 {
 
 .others-say-card-text {
 
-    width: 243px;
+    max-width: 243px;
 
     color: #0B1511;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 20px;
-    margin: auto;
+    margin: 8px auto 0 auto;
 
+    /*padding: 16px 8px;///*/
+
+}
+
+.name-author h5 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.name-author p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.comment-text {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.others-say-card-photo {
+    margin-right: 10px;
 }
 
 /*======================== Roadmap setting ===========================*/
 
 .roadmap {
-    height: 700px; /*temporarily*/
-    background-color: lightslategray; /*temporarily*/
+    /*height: 700px; !*temporarily*!*/
+    /*background-color: lightslategray; !*temporarily*!*/
+    text-align: center;
+    margin-bottom: 200px;
+    padding: 0 70px;
 }
 
-.roadmap-top {
-    height: 50%; /*temporarily*/
-    text-align: center;
 
+.roadmap-title {
+    max-width: 630px;
+    margin: auto;
+    text-align: center;
+}
+
+.roadmap-block {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
+
+
+.roadmap-img {
+    height: 125px;
+    width: 125px;
+    background-image: url("./imagine/roadmap/Mask.png");
+
+
+    display: flex;
+    align-items: center;
+}
+
 
 .roadmap-bottom {
-    height: 50%; /*temporarily*/
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 74px;
+}
+
+.tooltip {
+
+    height: 102px;
+    width: 242px;
+    border-radius: 8px;
+    background-color: #54DD96;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+
+    padding: 34px 16px 24px 16px;
+    margin-top: 84px;
+
 }
+
 
 /*======================== Team setting ===========================*/
 
