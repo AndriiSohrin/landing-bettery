@@ -15,6 +15,7 @@ main {
     /*background-position: 0 41%;*/
 
     background: url("./imagine/background/left.png") 0 42% no-repeat,
+    url("./imagine/background/left.png") 0 80% no-repeat,
     url("./imagine/background/right.png") 100% 58% no-repeat;
 }
 
@@ -55,12 +56,12 @@ body h1, h2, h3 {
     background-repeat: no-repeat;
     background-position: 482px -420px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-bar {
     height: 90px;
     margin: auto;
-
     display: flex;
 
     align-items: center;
@@ -80,6 +81,7 @@ body h1, h2, h3 {
 .nav-menu ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .nav-menu a {
@@ -91,6 +93,18 @@ body h1, h2, h3 {
     letter-spacing: 0;
     line-height: 20px;
 
+}
+
+.telegram {
+    position: relative;
+    margin-left: 25px;
+}
+
+.telegram:before {
+    content: url("./imagine/header/telegram.png");
+    position: absolute;
+    left: -24%;
+    top: 11%;
 }
 
 .menu-item {
@@ -152,10 +166,44 @@ body h1, h2, h3 {
 
 }
 
+.head-subtitle {
+
+    color: #0EAF5C;
+
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 28px;
+
+}
+
+.head-subtitle:after {
+    content: url("./imagine/header/edit - material.png");
+    padding-left: 4px;
+}
+
+.language select {
+
+    box-sizing: border-box;
+    height: 32px;
+    width: 95px;
+    border: 1px solid #0B1511;
+    border-radius: 4px;
+    background: transparent;
+
+}
+
+.language {
+    position: relative;
+    left: 20%;
+    top: 0%;
+}
+
 /*==================== second setting =====================*/
 
 .second {
     display: flex;
+    flex-wrap: wrap;
     background-image: url("./imagine/background/left.png");
     background-repeat: no-repeat;
 }
@@ -181,6 +229,7 @@ body h1, h2, h3 {
 
 .card-top {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 120px;
     padding-left: 70px;
 }
@@ -244,6 +293,7 @@ body h1, h2, h3 {
 
 .third {
     display: flex;
+
     padding-bottom: 212px;
     background: url("./imagine/background/Group 30.png") 13% 80% no-repeat;
 }
@@ -294,6 +344,7 @@ body h1, h2, h3 {
 .block-card-wrap {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     margin-top: 100px;
     padding-bottom: 230px;
@@ -364,7 +415,7 @@ body h1, h2, h3 {
 
 
 .say-card-author {
-    margin: 24px;
+    margin: 10px 24px 0 24px;
     display: flex;
     align-items: center;
 }
@@ -438,13 +489,10 @@ body h1, h2, h3 {
 /*======================== Roadmap setting ===========================*/
 
 .roadmap {
-    /*height: 700px; !*temporarily*!*/
-    /*background-color: lightslategray; !*temporarily*!*/
     text-align: center;
     margin-bottom: 200px;
     padding: 0 70px;
 }
-
 
 .roadmap-title {
     max-width: 630px;
@@ -454,25 +502,36 @@ body h1, h2, h3 {
 
 .roadmap-block {
     display: flex;
+
     flex-direction: column;
     align-items: center;
+
+    /*====text===========*/
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+
 }
 
 
 .roadmap-img {
     height: 125px;
-    width: 125px;
-    background-image: url("./imagine/roadmap/Mask.png");
+    max-width: 114px;
+    background: url("./imagine/roadmap/Mask.png") 60% 0% no-repeat;
 
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
 .roadmap-bottom {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     margin-top: 74px;
 }
@@ -497,53 +556,197 @@ body h1, h2, h3 {
 /*======================== Team setting ===========================*/
 
 .team {
-    height: 950px; /*temporarily*/
-    background-color: lightcoral; /*temporarily*/
+
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 0 35px 60px 70px;
+}
+
+.team-card {
+    max-width: 275px;
+    max-height: 310px;
+
+    text-align: center;
+    margin-right: 55px;
+    margin-bottom: 83px;
+}
+
+.team-card-logo {
+    margin-bottom: 37px;
+    margin-top: 46px;
+}
+
+.team-logo-text {
+
+    /*max-width: 243px;*/
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 23px;
+    text-align: left;
+
+
+}
+
+.team-name {
+
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 27px;
+    text-align: center;
+
+}
+
+.team-position {
+
+
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 21px;
+    text-align: center;
+
+}
+
+.team-text {
+
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+
 }
 
 /*========================  Form setting ==============================*/
 
 .form {
-    height: 685px; /*temporarily*/
-    background-color: #FDDB27; /*temporarily*/
+    /*height: 685px; !*temporarily*!*/
+
+    background: url("./imagine/background/form-background.png") no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
+
+    padding: 56px 0 55px 0;
+
 }
 
 .form_wrap {
-    height: 560px;
-    width: 560px;
-    background-color: lavender; /*temporarily*/
+    max-height: 580px;
+    width: 39%;
+    background-color: #FFFFFF; /*temporarily*/
+    padding: 25px 25px 25px 25px;
 }
 
-.form_wrap label {
-    width: 80%;
+
+.form-title {
+
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 8px;
+
 }
 
-.form_wrap input {
-    width: 80%;
-    margin: auto;
+.form-title h3 {
+
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 44px;
+    text-align: center;
+    font-style: normal;
 }
 
 .form_full_name {
-    width: 82%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 32px;
+
 }
 
 .form_full_name input {
-    width: 94%;
+    width: 100%;
+
+    box-sizing: border-box;
+    height: 44px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+
+    padding-left: 8px;
+
 }
 
-.form_first_name {
-    width: 50%; /*temporarily*/
+.form_full_name label {
+
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+
 }
 
 .form_last_name {
-    width: 50%; /*temporarily*/
+    width: 48%; /*temporarily*/
+}
+
+.form_first_name {
+    width: 48%; /*temporarily*/
+}
+
+/*==============*/
+
+.form-input input {
+
+
+    box-sizing: border-box;
+    height: 44px;
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+
+    padding-left: 8px;
+}
+
+
+.form-btn {
+    text-align: center;
+    margin-top: 32px;
+
+}
+
+.form-btn button {
+    height: 48px;
+    width: 200px;
+    border-radius: 24px;
+    background-color: #0B1511;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+
+    /*====text button====*/
+
+
+    color: #FFFFFF;
+
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 26px;
+
 }
 
 /*========================  Footer setting ==============================*/
@@ -551,5 +754,88 @@ body h1, h2, h3 {
 .footer {
     height: 300px;
     background-color: black;
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 72px 110px;
+
+    /*==== footer text =====*/
+    color: #9E9E9E;
+
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+
 }
 
+.about-us {
+    width: 30%;
+}
+
+.stay {
+    width: 30%;
+}
+
+.footer-title {
+
+    color: #E6E6E6;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-bottom: 8px;
+
+}
+
+.footer-input {
+    display: flex;
+}
+
+/*==================================*/
+.footer-input input {
+    box-sizing: border-box;
+    height: 40px;
+    width: 290px;
+    border: 1px solid #FDD92A;
+    border-radius: 20px 0 0 20px;
+    background-color: rgba(253, 217, 42, 0.05);
+
+    padding-left: 16px;
+
+}
+
+.footer-input button {
+
+    height: 40px;
+    width: 110px;
+    border-radius: 0 100px 100px 0;
+    background-color: #FDD92A;
+    border-color: #FDD92A;
+
+}
+
+/*===============================================*/
+.footer-mail a {
+
+    color: #FDD92A;
+
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+.mr-32 {
+    margin-right: 32px;
+}
+
+
+.footer-mail {
+    display: flex;
+    align-items: center;
+}
