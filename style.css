@@ -10,13 +10,12 @@ main {
     max-width: 1440px;
     margin: auto;
 
-    /*background-image: url("./imagine/background/left.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: 0 41%;*/
-
     background: url("./imagine/background/left.png") 0 42% no-repeat,
     url("./imagine/background/left.png") 0 80% no-repeat,
-    url("./imagine/background/right.png") 100% 58% no-repeat;
+    url("./imagine/background/right.png") 100% 58% no-repeat,
+    url("./imagine/header/Group 37.png") 142% -1% no-repeat;
+
+
 }
 
 /*===================== text setting ===========================*/
@@ -49,12 +48,10 @@ body h1, h2, h3 {
     line-height: 28;
 }
 
+
 /*==================== Header setting =====================*/
 
 .header {
-    background-image: url("./imagine/header/Group 28.png");
-    background-repeat: no-repeat;
-    background-position: 482px -420px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -67,15 +64,17 @@ body h1, h2, h3 {
     align-items: center;
     position: fixed;
     z-index: 999;
+
+    width: 100%;
 }
 
 .logo {
-    width: 169px;
-    margin-right: 72px;
+    margin-right: 5%;
 }
 
 .nav-menu {
     /*width: 86%;*/
+    /*width: 100%;*/
 }
 
 .nav-menu ul {
@@ -95,33 +94,26 @@ body h1, h2, h3 {
 
 }
 
-.telegram {
+.telegram img {
     position: relative;
-    margin-left: 25px;
-}
-
-.telegram:before {
-    content: url("./imagine/header/telegram.png");
-    position: absolute;
-    left: -24%;
-    top: 11%;
+    top: 7px;
+    left: -7px;
 }
 
 .menu-item {
     margin-right: 32px;
+    /*width: 7%;*/
 }
 
 .banner {
     align-self: center;
-
+    max-width: 42%; /*temporarily*/
     margin-left: 70px;
     margin-top: 220px;
     margin-bottom: 165px;
 }
 
 .main-title {
-    max-width: 600px; /*temporarily*/
-
     font-size: 56px;
     font-weight: 600;
     letter-spacing: 0;
@@ -130,7 +122,7 @@ body h1, h2, h3 {
 }
 
 .title-text {
-    width: 528px; /*temporarily*/
+    width: 92%; /*temporarily*/
 
     font-weight: normal;
     font-size: 18px;
@@ -149,6 +141,7 @@ body h1, h2, h3 {
 .header-btn {
     height: 48px;
     width: 171px;
+
     border: none;
     border-radius: 24px;
     background-color: #54DD96;
@@ -158,10 +151,10 @@ body h1, h2, h3 {
 
     font-size: 18px;
     font-weight: bold;
+
     letter-spacing: 0;
     line-height: 28px;
     text-align: center;
-
     cursor: pointer;
 
 }
@@ -190,14 +183,12 @@ body h1, h2, h3 {
     border: 1px solid #0B1511;
     border-radius: 4px;
     background: transparent;
-
 }
 
 .language {
-    position: relative;
-    left: 20%;
-    top: 0%;
+    padding-left: 18%;
 }
+
 
 /*==================== second setting =====================*/
 
@@ -206,12 +197,12 @@ body h1, h2, h3 {
     flex-wrap: wrap;
     background-image: url("./imagine/background/left.png");
     background-repeat: no-repeat;
+    padding-bottom: 135px;
 }
 
-/*=======right=======*/
 .second-right {
     width: 50%;
-    background: url("./imagine/background/Group 30.png") 40% 5% no-repeat;
+    background: url("./imagine/background/Group 30.png") 38% 13% no-repeat;
 }
 
 .title-second {
@@ -225,11 +216,15 @@ body h1, h2, h3 {
 
 .second-left {
     width: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card-top {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+
     padding-top: 120px;
     padding-left: 70px;
 }
@@ -243,10 +238,10 @@ body h1, h2, h3 {
 .card {
     max-height: 288px;
     max-width: 242px;
+
     border-radius: 32px;
     background-color: #FFFFFF;
     box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.1);
-
     text-align: center;
 
     padding: 24px 16px;
@@ -256,19 +251,14 @@ body h1, h2, h3 {
 
 .card-yellow {
     background-color: #FDD92A;
-    margin-top: -140px;
+    margin-top: 195px;
 }
 
-.mt-ml {
-    margin-top: 150px;
-    margin-left: 30px;
+.mt-64 {
+    margin-top: 64px;
 }
-
 
 .card-text {
-
-    /*height: 104px;*/
-    /*width: 210px;*/
     line-height: 26px;
     text-align: center;
     margin: auto;
@@ -318,11 +308,11 @@ body h1, h2, h3 {
     margin-top: 16px;
 }
 
+
 /*======================= value blockchain ======================*/
 
 .val-blockchain {
     padding: 0 84px 0 84px;
-
     background: url("./imagine/background/Group 30.png") 10% 99% no-repeat;
 }
 
@@ -335,7 +325,7 @@ body h1, h2, h3 {
 
 .block-text {
     max-height: 84px;
-    max-width: 638px;
+    max-width: 51%;
 
     text-align: center;
     margin: 16px auto 0 auto;
@@ -351,9 +341,8 @@ body h1, h2, h3 {
 }
 
 .blockchain-card {
-
-    height: 216px;
     width: 275px;
+
     border-radius: 24px;
     background-color: #FFFFFF;
     box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.1);
@@ -365,7 +354,7 @@ body h1, h2, h3 {
 
 .blockchain-card-title {
 
-    width: 243px;
+    width: 97%;
 
     font-size: 20px;
     font-weight: bold;
@@ -387,6 +376,7 @@ body h1, h2, h3 {
     margin: auto;
 
 }
+
 
 /*======================== others-say setting ===========================*/
 
@@ -451,9 +441,8 @@ body h1, h2, h3 {
     font-size: 16px;
     letter-spacing: 0;
     line-height: 20px;
-    margin: 8px auto 0 auto;
 
-    /*padding: 16px 8px;///*/
+    margin: 8px auto 0 auto;
 
 }
 
@@ -486,6 +475,7 @@ body h1, h2, h3 {
     margin-right: 10px;
 }
 
+
 /*======================== Roadmap setting ===========================*/
 
 .roadmap {
@@ -502,7 +492,6 @@ body h1, h2, h3 {
 
 .roadmap-block {
     display: flex;
-
     flex-direction: column;
     align-items: center;
 
@@ -519,9 +508,8 @@ body h1, h2, h3 {
 .roadmap-img {
     height: 125px;
     max-width: 114px;
+
     background: url("./imagine/roadmap/Mask.png") 60% 0% no-repeat;
-
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -537,7 +525,6 @@ body h1, h2, h3 {
 }
 
 .tooltip {
-
     height: 102px;
     width: 242px;
     border-radius: 8px;
@@ -552,12 +539,9 @@ body h1, h2, h3 {
 
 }
 
-
 /*======================== Team setting ===========================*/
 
 .team {
-
-
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -580,9 +564,6 @@ body h1, h2, h3 {
 }
 
 .team-logo-text {
-
-    /*max-width: 243px;*/
-
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0;
@@ -593,7 +574,6 @@ body h1, h2, h3 {
 }
 
 .team-name {
-
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0;
@@ -603,8 +583,6 @@ body h1, h2, h3 {
 }
 
 .team-position {
-
-
     font-size: 14px;
     font-style: italic;
     font-weight: 600;
@@ -615,22 +593,20 @@ body h1, h2, h3 {
 }
 
 .team-text {
-
-
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 20px;
     text-align: center;
+
     margin-bottom: 8px;
 
 }
 
+
 /*========================  Form setting ==============================*/
 
 .form {
-    /*height: 685px; !*temporarily*!*/
-
     background: url("./imagine/background/form-background.png") no-repeat;
     display: flex;
     justify-content: center;
@@ -644,24 +620,24 @@ body h1, h2, h3 {
 .form_wrap {
     max-height: 580px;
     width: 39%;
+
     background-color: #FFFFFF; /*temporarily*/
     padding: 25px 25px 25px 25px;
 }
 
 
 .form-title {
-
     font-size: 14px;
     font-style: italic;
     letter-spacing: 0;
     line-height: 24px;
     text-align: center;
+
     margin-top: 8px;
 
 }
 
 .form-title h3 {
-
     font-size: 38px;
     font-weight: 600;
     letter-spacing: 0;
@@ -674,7 +650,6 @@ body h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
-
 }
 
 .form_full_name input {
@@ -691,7 +666,6 @@ body h1, h2, h3 {
 }
 
 .form_full_name label {
-
     font-size: 16px;
     letter-spacing: 0;
     line-height: 20px;
@@ -706,14 +680,11 @@ body h1, h2, h3 {
     width: 48%; /*temporarily*/
 }
 
-/*==============*/
-
 .form-input input {
-
-
-    box-sizing: border-box;
     height: 44px;
     width: 100%;
+
+    box-sizing: border-box;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
     background-color: #FFFFFF;
@@ -721,27 +692,22 @@ body h1, h2, h3 {
     padding-left: 8px;
 }
 
-
 .form-btn {
     text-align: center;
     margin-top: 32px;
-
 }
 
 .form-btn button {
     height: 48px;
     width: 200px;
+
     border-radius: 24px;
     background-color: #0B1511;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
-
     cursor: pointer;
 
     /*====text button====*/
-
-
     color: #FFFFFF;
-
     font-size: 17px;
     font-weight: bold;
     letter-spacing: 0;
@@ -749,13 +715,13 @@ body h1, h2, h3 {
 
 }
 
+
 /*========================  Footer setting ==============================*/
 
 .footer {
     height: 300px;
+
     background-color: black;
-
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -764,7 +730,6 @@ body h1, h2, h3 {
 
     /*==== footer text =====*/
     color: #9E9E9E;
-
     font-size: 14px;
     letter-spacing: 0;
     line-height: 20px;
@@ -780,12 +745,12 @@ body h1, h2, h3 {
 }
 
 .footer-title {
-
     color: #E6E6E6;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 27px;
+
     margin-bottom: 8px;
 
 }
@@ -794,11 +759,11 @@ body h1, h2, h3 {
     display: flex;
 }
 
-/*==================================*/
 .footer-input input {
-    box-sizing: border-box;
     height: 40px;
     width: 290px;
+
+    box-sizing: border-box;
     border: 1px solid #FDD92A;
     border-radius: 20px 0 0 20px;
     background-color: rgba(253, 217, 42, 0.05);
@@ -808,25 +773,23 @@ body h1, h2, h3 {
 }
 
 .footer-input button {
-
     height: 40px;
     width: 110px;
+
     border-radius: 0 100px 100px 0;
     background-color: #FDD92A;
     border-color: #FDD92A;
 
 }
 
-/*===============================================*/
 .footer-mail a {
-
     color: #FDD92A;
-
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 24px;
     text-decoration: none;
+
     margin-left: 8px;
 }
 
@@ -834,8 +797,9 @@ body h1, h2, h3 {
     margin-right: 32px;
 }
 
-
 .footer-mail {
     display: flex;
     align-items: center;
 }
+
+
