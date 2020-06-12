@@ -10,10 +10,10 @@ main {
     max-width: 1440px;
     margin: auto;
 
-    background: url("./imagine/background/left.png") 0 42% no-repeat,
-    url("./imagine/background/left.png") 0 80% no-repeat,
-    url("./imagine/background/right.png") 100% 58% no-repeat,
-    url("./imagine/header/Group 37.png") 142% -1% no-repeat;
+    background: url("../imagine/background/left.png") 0 42% no-repeat,
+    url("../imagine/background/left.png") 0 80% no-repeat,
+    url("../imagine/background/right.png") 100% 58% no-repeat,
+    url("../imagine/header/Group37.png") 142% -1% no-repeat;
 
 
 }
@@ -62,7 +62,7 @@ body h1, h2, h3 {
     display: flex;
 
     align-items: center;
-    position: fixed;
+    /*position: fixed;*/
     z-index: 999;
 
     width: 100%;
@@ -109,7 +109,7 @@ body h1, h2, h3 {
     align-self: center;
     max-width: 42%; /*temporarily*/
     margin-left: 70px;
-    margin-top: 220px;
+    margin-top: 130px;
     margin-bottom: 165px;
 }
 
@@ -171,7 +171,7 @@ body h1, h2, h3 {
 }
 
 .head-subtitle:after {
-    content: url("./imagine/header/edit - material.png");
+    content: url("../imagine/header/editMaterial.png");
     padding-left: 4px;
 }
 
@@ -186,7 +186,7 @@ body h1, h2, h3 {
 }
 
 .language {
-    padding-left: 18%;
+    padding-left: 20%;
 }
 
 
@@ -195,14 +195,14 @@ body h1, h2, h3 {
 .second {
     display: flex;
     flex-wrap: wrap;
-    background-image: url("./imagine/background/left.png");
+    background-image: url("../imagine/background/left.png");
     background-repeat: no-repeat;
     padding-bottom: 135px;
 }
 
 .second-right {
     width: 50%;
-    background: url("./imagine/background/Group 30.png") 38% 13% no-repeat;
+    background: url("../imagine/background/Group30.png") 38% 13% no-repeat;
 }
 
 .title-second {
@@ -254,6 +254,10 @@ body h1, h2, h3 {
     margin-top: 195px;
 }
 
+.img-change{
+    display: none;
+}
+
 .mt-64 {
     margin-top: 64px;
 }
@@ -285,7 +289,7 @@ body h1, h2, h3 {
     display: flex;
 
     padding-bottom: 212px;
-    background: url("./imagine/background/Group 30.png") 13% 80% no-repeat;
+    background: url("../imagine/background/Group30.png") 13% 80% no-repeat;
 }
 
 .third-left {
@@ -313,7 +317,7 @@ body h1, h2, h3 {
 
 .val-blockchain {
     padding: 0 84px 0 84px;
-    background: url("./imagine/background/Group 30.png") 10% 99% no-repeat;
+    background: url("../imagine/background/Group30.png") 10% 99% no-repeat;
 }
 
 .val-blockchain-title {
@@ -384,7 +388,7 @@ body h1, h2, h3 {
     padding: 0 84px 0 84px;
     text-align: center;
 
-    background: url("./imagine/background/Group 30.png") 82% 93% no-repeat;
+    background: url("../imagine/background/Group30.png") 82% 93% no-repeat;
 }
 
 .others-say-card {
@@ -509,7 +513,7 @@ body h1, h2, h3 {
     height: 125px;
     max-width: 114px;
 
-    background: url("./imagine/roadmap/Mask.png") 60% 0% no-repeat;
+    background: url("../imagine/roadmap/Mask.png") 60% 0% no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -607,19 +611,19 @@ body h1, h2, h3 {
 /*========================  Form setting ==============================*/
 
 .form {
-    background: url("./imagine/background/form-background.png") no-repeat;
+    background: url("../imagine/background/form-background.png") no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
 
-    padding: 56px 0 55px 0;
+    padding: 56px 0 49px 0;
 
 }
 
 .form_wrap {
-    max-height: 580px;
-    width: 39%;
+    height: 580px;
+    width: 560px;
 
     background-color: #FFFFFF; /*temporarily*/
     padding: 25px 25px 25px 25px;

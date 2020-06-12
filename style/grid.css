@@ -3,7 +3,7 @@
 @media (max-width: 768px) {
 
     main {
-        background: url("./imagine/header/tablet baner.png") 142% -0.3% no-repeat;
+        background: url("../imagine/header/tabletBaner.png") 142% -0.3% no-repeat;
     }
 
     body {
@@ -99,6 +99,7 @@
         margin: 3px auto 8px auto;
 
     }
+
     .card-text {
         font-size: 14px;
         letter-spacing: 0;
@@ -119,6 +120,20 @@
     .second-right {
         padding: 0 16px 0 32px;
     }
+
+    .card-yellow {
+        background-color: #FFFFFF;
+    }
+
+
+    .img-change-white {
+        display: none;
+    }
+
+    .img-change {
+        display: block;
+    }
+
 
     /*============ third 768px setting ===========*/
     .third {
@@ -151,7 +166,6 @@
 
 
     /*  val-blockchain 768px setting  */
-
     .val-blockchain {
         padding: 0 16px 0 16px;
     }
@@ -191,7 +205,6 @@
 
 
     /*==============other-say 768px setting==========*/
-
     .others-say {
         padding: 0 16px 0 16px;
     }
@@ -243,7 +256,6 @@
 
 
     /*====== roadmap 768px setting =======*/
-
     .roadmap {
         padding: 0 16px;
         margin-bottom: 180px;
@@ -260,12 +272,62 @@
         padding: 34px 3px 24px 3px;
         margin-top: 86px;
     }
-    .tooltip p{
+
+    .tooltip p {
         font-size: 14px;
     }
 
     .roadmap-title {
         max-width: 370px;
+    }
+
+
+    /*========== team 768px setting ==============*/
+    .team {
+        padding: 0 16px 60px 16px;
+        justify-content: normal;
+    }
+
+    .team img[alt=team] {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-card-logo img {
+        height: 74px;
+        width: 151px;
+
+        margin-top: 13px;
+    }
+
+    .team-card {
+        max-width: 172px;
+        /*max-height: 310px;*/
+        margin-right: 16px;
+        margin-bottom: 46px;
+    }
+
+    .team :nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .team-card-logo {
+        margin-top: 10px;
+    }
+
+    /*============ form 768px setting ========*/
+    .footer {
+
+        padding: 40px 16px;
+
+    }
+
+    .about-us {
+        width: 50%;
+    }
+
+    .stay {
+        margin-right: 38px;
     }
 
 }

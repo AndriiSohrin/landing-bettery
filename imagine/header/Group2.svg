@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="143px" height="72px" viewBox="0 0 143 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>B6B3144D-8A6D-4E77-BE1D-F52FD98DEADC</title>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page-Final" transform="translate(-8.000000, -8.000000)">
+            <g id="Group-2" transform="translate(8.000000, 8.000000)">
+                <path d="M64.052634,13.0839647 L71.7523113,41.8195517 C72.4240155,44.3263859 71.7073157,47.0011461 69.8721857,48.836276 L48.836276,69.8721857 C47.0011461,71.7073157 44.3263859,72.4240155 41.8195517,71.7523113 L13.0839647,64.052634 C10.5771306,63.3809298 8.61907021,61.4228694 7.94736603,58.9160353 L0.247688685,30.1804483 C-0.424015496,27.6736141 0.292684333,24.9988539 2.12781428,23.163724 L23.163724,2.12781428 C24.9988539,0.292684333 27.6736141,-0.424015496 30.1804483,0.247688685 L58.9160353,7.94736603 C61.4228694,8.61907021 63.3809298,10.5771306 64.052634,13.0839647 Z" id="Polygon" fill="#FDD92A"></path>
+                <text id="Bettery" font-family="Poppins-SemiBold, Poppins" font-size="36" font-weight="500" line-spacing="34" fill="#0B1511">
+                    <tspan x="10" y="56">Bettery</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
